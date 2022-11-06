@@ -28,5 +28,5 @@ def cloudinaryUpload(img: bytes | str, contentType: str):
         file = Image.open(io.BytesIO(img))
         file.save(file_name)
     res = cloudinary.uploader.upload(file_name)
-    url = res["url"]
+    url = res["secure_url"]
     return url
