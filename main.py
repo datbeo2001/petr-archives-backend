@@ -51,6 +51,3 @@ def create_new_sticker(file: UploadFile = File(...), name: str = Form(""), times
     except Exception as E:
         raise E
 
-
-if __name__ == '__main__':
-    uvicorn.run('main:app', reload=True)
