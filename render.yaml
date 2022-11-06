@@ -3,6 +3,7 @@ services:
     name: petr-archives-api
     env: python
     repo: https://github.com/datbeo2001/petr-archives-backend
+    plan: free
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.5
