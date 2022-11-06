@@ -18,7 +18,7 @@ app.add_middleware(
 
 @app.get("/")
 def home():
-    return {}
+    return {"message": "Petr Archives API is ready"}
 
 
 @app.get("/get-data")
